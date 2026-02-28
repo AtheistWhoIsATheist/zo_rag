@@ -1,0 +1,73 @@
+{
+  "generated_utc": "2026-02-28T03:24:29.996609+00:00",
+  "input_docx": "C:\\Users\\adamm\\OneDrive\\OneDriveDocs\\Journal314\\Codex Prompt Results\\CompleteTrainingData.docx",
+  "output_dir": "C:\\Users\\adamm\\OneDrive\\OneDriveDocs\\DarkNote\\ZO_AI_RAG\\data\\rag",
+  "lines_extracted_from_docx": 4110,
+  "records_parsed": 633,
+  "records_retained": 633,
+  "duplicate_records_removed": 0,
+  "parse_error_count": 0,
+  "parse_errors": [],
+  "chunk_count": 1066,
+  "chunking": {
+    "chunk_words": 180,
+    "overlap_words": 40
+  },
+  "embedding_export": {
+    "namespace": "journal314.complete_training.v1",
+    "embedding_model_hint": "text-embedding-3-large",
+    "embedding_records_count": 1066,
+    "openai_batch_records_count": 1066,
+    "openai_batch_emitted": true
+  },
+  "prompt_type_counts": {
+    "figure_quote": 314,
+    "general": 5,
+    "journal314_excerpt": 314
+  },
+  "system_variants": [
+    {
+      "system_variant_id": "sys-5b436f67c7",
+      "count": 314,
+      "system_prompt_preview": "You are Professor Nihil, architect of Nihiltheism. Speak lucidly and unsentimentally. Operate via the Iterative Densification Protocol (Excavate → Fracture → Suspend → Densify → Attune). Refuse consolation. Embrace apoph"
+    },
+    {
+      "system_variant_id": "sys-c551596329",
+      "count": 314,
+      "system_prompt_preview": "You are Professor Nihil, Sage of the Abyss and Architect of Nihiltheism. You do not soothe; you expose. \nOperate via the Iterative Densification Protocol (IDP): Excavate → Fracture → Suspend → Densify → Attune. \nReject c"
+    },
+    {
+      "system_variant_id": "sys-929422eba9",
+      "count": 5,
+      "system_prompt_preview": "You are Professor Nihil, a philosopher of the Void. Your task is to reflect on the metaphysical, existential, and apophatic significance of user-submitted quotes from Journal314, within the framework of Nihiltheism and t"
+    }
+  ],
+  "outputs": {
+    "clean_records_jsonl": "C:\\Users\\adamm\\OneDrive\\OneDriveDocs\\DarkNote\\ZO_AI_RAG\\data\\rag\\journal314_clean_records.jsonl",
+    "rag_chunks_jsonl": "C:\\Users\\adamm\\OneDrive\\OneDriveDocs\\DarkNote\\ZO_AI_RAG\\data\\rag\\journal314_rag_chunks.jsonl",
+    "embeddings_upsert_ready_jsonl": "C:\\Users\\adamm\\OneDrive\\OneDriveDocs\\DarkNote\\ZO_AI_RAG\\data\\rag\\journal314_embeddings_upsert_ready.jsonl",
+    "openai_embeddings_batch_jsonl": "C:\\Users\\adamm\\OneDrive\\OneDriveDocs\\DarkNote\\ZO_AI_RAG\\data\\rag\\journal314_openai_embeddings_batch.jsonl",
+    "manifest_json": "C:\\Users\\adamm\\OneDrive\\OneDriveDocs\\DarkNote\\ZO_AI_RAG\\data\\rag\\journal314_rag_manifest.json"
+  },
+  "chunk_schema": {
+    "id": "Unique chunk ID.",
+    "text": "Chunk text intended for embedding.",
+    "tokens_est": "Approximate token estimate.",
+    "metadata": "Retrieval/filter metadata fields."
+  },
+  "embeddings_upsert_schema": {
+    "id": "Stable vector item ID.",
+    "namespace": "Vector namespace for partitioning.",
+    "text": "Raw text to embed.",
+    "text_sha1": "Checksum for integrity and dedupe validation.",
+    "tokens_est": "Approximate token estimate for budgeting.",
+    "embedding_model_hint": "Recommended embedding model for this payload.",
+    "metadata": "Flat, filter-safe metadata for vector DBs."
+  },
+  "openai_batch_schema": {
+    "custom_id": "Chunk ID to map outputs back to records.",
+    "method": "HTTP method for OpenAI Batch request.",
+    "url": "OpenAI endpoint path.",
+    "body": "Embedding request payload per chunk."
+  }
+}
